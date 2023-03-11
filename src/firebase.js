@@ -6,12 +6,12 @@ import "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBTYofSZGNRKorhHEubO-jrMt3b7xId-hA",
-  authDomain: "react-disney-clone-2014e.firebaseapp.com",
-  projectId: "react-disney-clone-2014e",
-  storageBucket: "react-disney-clone-2014e.appspot.com",
-  messagingSenderId: "451833405322",
-  appId: "1:451833405322:web:9afca6dcdeadbb7c493273"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
